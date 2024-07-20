@@ -1,0 +1,59 @@
+a {
+    color: $text-cl;
+    text-decoration: none;
+    display: block;
+}
+img {
+    display: block;
+    // margin: auto;
+    // max-width: 100%;
+}
+strong {
+    font-family: bb;
+}
+
+.-lv1 {
+    @include text(100px, b, 100px, $white-cl, none);
+    font-weight: normal;
+    margin: 0;
+    a {
+        @include text(100px, g, 100px, $white-cl, none);
+    }
+    @include tablet {
+    }
+    @include mobile {
+    }
+}
+
+.button {
+}
+
+.arrow {
+}
+.body-text {
+}
+.title {
+    &.--big {
+        font-family: "poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 112px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $cl-text;
+    }
+    &.small {
+        font-family: "poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 117px;
+        text-align: center;
+        color: $cl-text;
+    }
+}
+p {
+    @include text (24px, 'poppins', 146%, $cl-text, none);
+    font-weight: 400;
+}

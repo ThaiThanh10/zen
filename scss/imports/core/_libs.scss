@@ -1,0 +1,86 @@
+.who-list-item {
+    margin: 0 20px;
+}
+.who{
+    .who-list{
+        position: relative;
+    }
+    .carousel-cell {
+        padding: 30px 0;
+    }
+    .flickity-page-dots{
+        bottom: -50px;
+        z-index: 99;
+        top: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        .dot{
+            width: 50px;
+            margin: 0 10px;
+            height: 4px;
+            &.is-selected{
+             background-color: #ffdc5f;
+            }
+        }
+    }
+
+}
+.service{
+    .test{
+        position: relative;
+    }
+    .flickity-page-dots{
+        bottom: -50px;
+        z-index: 99;
+        top: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        height: fit-content;
+        .dot{
+            margin: 0 10px;          
+        }
+    }
+
+}
+.project {
+    .flickity-page-dots {
+        z-index: 99;
+        top: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        .dot{
+            width: 8px;
+            height: 8px;
+            margin: 0 10px;
+            &.is-selected{
+             background-color: #ffdc5f;
+            }
+        }
+    }
+    .flickity-button {
+        top: 40%;
+    }
+}
+.fade {
+    opacity: 0;
+}
+.team {
+    .flickity-page-dots {
+        z-index: 99;
+        bottom: -60%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        .dot{
+            width: 8px;
+            height: 8px;
+            margin: 0 10px;
+            &.is-selected{
+             background-color: #ffdc5f;
+            }
+        }
+    }
+}

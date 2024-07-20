@@ -1,0 +1,36 @@
+footer {
+  background-color: #110E31;
+  .container-fluid {
+    .wrap-footer {
+      @include display(space-between, flex-start);
+      padding: 70px 0;
+      .detail {
+        @include display(space-between, flex-start);
+        .footer-link {
+          margin-right: 170px;
+          a {
+            @include text(25px, 'poppins', 38px, $cl-text, none);
+            font-weight: 500;
+          }
+        }
+        .contact {
+          h3 {
+            @include text(48px, 'poppins', 89%, $cl-text, none);
+            font-weight: 400;
+            margin-bottom: 25px;
+          }
+          p {
+            @include text(20px, 'poppins', 138%, $cl-text, none);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    padding: 20px;
+    @include text(24px, 'poppins', 89%, $cl-text, none);
+    background-color: #090626;
+  }
+}
